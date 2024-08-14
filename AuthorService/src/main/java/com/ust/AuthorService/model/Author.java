@@ -1,28 +1,13 @@
 package com.ust.AuthorService.model;
 
-public class Author {
+import lombok.Data;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class Author {
     private long id;
     private String fullName;
-
-    public Author(long id, String fullName) {
-        this.id = id;
-        this.fullName = fullName;
-    }
-
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
-    }
-
-    public String getFullName() {
-        return fullName;
-    }
-
-    public void setFullName(String fullName) {
-        this.fullName = fullName;
-    }
 }
